@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h4 {
-    background-color: black;
+    background-color: #577D86;
     font-family: "Courier New", "Courier", monospace;
     color: white;
     border: 1px solid #D6A800;
@@ -15,14 +15,14 @@ h1, h2, h3, h4 {
 }
 
 a:link {
-    color: #126dc7;
+    color: #569DAA;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(184, 22, 189);
+    color: #B9EDDD;
 }
 
 a:visited {
-    color: rgb(103, 68, 164);
+    color: #87CBB9;
 }
