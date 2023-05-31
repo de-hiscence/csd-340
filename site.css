@@ -1,1 +1,28 @@
+*{
+    font-family: 'Cambria', 'Georgia', 'Times', 'Times New Roman', serif;
+}
 
+#container{
+    margin: 100px auto 50px auto;
+}
+
+.h1,.h2,.h3, .h4{
+    background-color: black;
+    font-family: 'Courier New', 'Courier', monospace;
+    color: white;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a:link {
+    color: #126dc7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(184, 22, 189);
+}
+
+a:visited {
+    color: rgb(103, 68, 164);
+}
