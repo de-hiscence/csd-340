@@ -1,14 +1,14 @@
 *{
-    font-family: 'Cambria', 'Georgia', 'Times', 'Times New Roman', serif;
+    font-family: "Georgia", Times, Times New Roman, serif;
 }
 
 #container{
     margin: 100px auto 50px auto;
 }
 
-.h1,.h2,.h3, .h4{
+h1, h2, h3, h4 {
     background-color: black;
-    font-family: 'Courier New', 'Courier', monospace;
+    font-family: "Courier New", "Courier", monospace;
     color: white;
     border: 1px solid #D6A800;
     padding: 10px;
