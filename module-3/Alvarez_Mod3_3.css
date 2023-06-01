@@ -2,6 +2,10 @@ h1 {
     text-align: center;
 }
 
+
+#container{
+    
+}
 .float-child {
     width: 45%;
     float: left;
@@ -12,9 +16,6 @@ h1 {
 #goBack {
     width: 100%;
     margin-top: 60%;
-    float: right;
-    position: absolute;
-    margin-bottom: 20px;
 }
 
 h3 {
@@ -35,7 +36,7 @@ ol {
 #list2 {
     border: 1px dashed red;
     border-radius: 15px;
-    padding: 10px;
+    float: right;
 }
 
 ul {
@@ -43,6 +44,11 @@ ul {
     list-style-type: upper-roman;
     list-style-position: inside;
     word-break: break-all;
+}
+
+a:link {
+    float: right;
+    margin-bottom: 20px;
 }
 
 a:hover {
