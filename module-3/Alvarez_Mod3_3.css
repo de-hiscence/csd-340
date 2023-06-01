@@ -3,9 +3,6 @@ h1 {
 }
 
 
-#container{
-    
-}
 .float-child {
     width: 45%;
     float: left;
@@ -18,26 +15,31 @@ h1 {
     margin-top: 60%;
 }
 
+
 h3 {
     font-weight: 500;
     padding: 10px;
 }
+
 
 #list1 {
     border: 1px solid red;
     border-radius: 15px;
 }
 
+
 ol {
     padding: 10px;
     list-style-position: inside;
 }
+
 
 #list2 {
     border: 1px dashed red;
     border-radius: 15px;
     float: right;
 }
+
 
 ul {
     padding: 10px;
@@ -46,10 +48,12 @@ ul {
     word-break: break-all;
 }
 
+
 a:link {
     float: right;
     margin-bottom: 20px;
 }
+
 
 a:hover {
     text-decoration: underline;
