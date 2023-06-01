@@ -39,6 +39,7 @@ ol {
 ul {
     padding: 10px;
     list-style-type: upper-roman;
+    list-style-position: inside;
 }
 
 a:hover {
