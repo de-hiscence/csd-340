@@ -5,8 +5,6 @@ h1 {
 
 .float-child {
     width: 45%;
-    display: grid;
-    grid-template-columns: 15px 15px;
     float: left;
     font-weight: 300;
 }
