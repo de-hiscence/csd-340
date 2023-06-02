@@ -6,7 +6,6 @@ h1 {
 .float-child {
     width: 45%;
     float: left;
-    font-weight: 300;
 }
 
 
@@ -25,6 +24,7 @@ h3 {
 #list1 {
     border: 1px solid red;
     border-radius: 15px;
+    font-weight: 300;
 }
 
 
@@ -37,7 +37,7 @@ ol {
 #list2 {
     border: 1px dashed red;
     border-radius: 15px;
-    float: right;
+    font-weight: 300;
 }
 
 
@@ -45,7 +45,6 @@ ul {
     padding: 10px;
     list-style-type: upper-roman;
     list-style-position: inside;
-    word-break: break-all;
 }
 
 
