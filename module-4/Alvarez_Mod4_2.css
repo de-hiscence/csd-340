@@ -1,0 +1,40 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+  h1, h3, figure {
+    text-align: center;
+}
+
+#image-gallery {
+    margin-top: 10%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+}
+
+h3, figcaption {
+    color: rgba(70, 0, 0, 0.8);
+}
+a:link {
+    float: right;
+    margin-bottom: 20px;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
