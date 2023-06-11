@@ -2,22 +2,19 @@
 
 .grid-container {
     display: inline-grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 400px 400px 400px;
     text-align: center;
+    margin-top: 10%;
 }
 
 .grid-item {
     height: 200px;
     padding: 10px;
-    margin: 5px;
+    margin: 20px;
 }
 
 h1, h3, figure {
     text-align: center;
-}
-
-#image-gallery {
-    margin-top: 10%;
 }
 
 figcaption {
