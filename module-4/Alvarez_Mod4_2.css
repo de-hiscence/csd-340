@@ -8,6 +8,7 @@
     border: 1px solid rgba(0, 0, 0, 0.8);
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-row-start: auto;
 }
 
 .grid-item {
@@ -15,7 +16,7 @@
     padding: 10px;
     margin: auto auto;
     text-align: center;
-
+    grid-column: 1;
 }
 
 h1, h3, figure {
