@@ -11,12 +11,14 @@
     grid-row-start: auto;
 }
 
-.grid-item {
+.grid-item1, .grid-item2, .grid-item3 {
 
     padding: 10px;
     margin: auto auto;
     text-align: center;
+    grid-column: auto;
 }
+
 
 h1, h3, figure {
     text-align: center;
