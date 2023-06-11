@@ -4,13 +4,13 @@
     display: flex;
 }
 
-.column {
-    flex: 33.33%;
+.column1, .column2, .column3 {
+    flex: 1;
     height: 200px;
     padding: 10px;
     margin: 5px;
     text-align: center;
-  }
+}
 
 h1, h3, figure {
     text-align: center;
