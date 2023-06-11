@@ -1,10 +1,11 @@
 
 
-.container {
-    display: flex;
+.grid-container {
+    display: inline-grid;
+    column-gap: 20px;
 }
 
-.column1, .column2, .column3 {
+.grid-item {
     flex: 1;
     height: 200px;
     padding: 10px;
