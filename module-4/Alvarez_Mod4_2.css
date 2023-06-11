@@ -2,15 +2,14 @@
 
 .grid-container {
     display: inline-grid;
-    column-gap: 20px;
+    grid-template-columns: 100px 150px 200px;
+    text-align: center;
 }
 
 .grid-item {
-    flex: 1;
     height: 200px;
     padding: 10px;
     margin: 5px;
-    text-align: center;
 }
 
 h1, h3, figure {
