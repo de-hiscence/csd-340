@@ -9,15 +9,14 @@
     grid-column-end: 4;
     grid-row-start: auto;
     border: 2px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
 }
 
 
 .grid-item1, .grid-item2, .grid-item3 {
-    box-sizing: border-box;
     padding: 10px;
     margin: auto auto;
     text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.8);
 }
 
 
