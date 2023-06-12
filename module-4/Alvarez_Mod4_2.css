@@ -8,14 +8,12 @@
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: auto;
-    border: 2px solid rgba(0, 0, 0, 0.8);
     padding: 0%;
 }
 
 
 .grid-item1, .grid-item2, .grid-item3 {
-    padding: 10px;
-    margin: auto auto;
+    border: 2px solid rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
