@@ -8,6 +8,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: auto;
+    border: 2px solid rgba(0, 0, 0, 0.8);
 }
 
 
