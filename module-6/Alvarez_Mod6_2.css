@@ -76,6 +76,7 @@ footer p {
 footer a {
     color: #f8f5f0;
     text-decoration: none;
+    float: right;
 }
 
 footer a:hover {
