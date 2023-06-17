@@ -68,7 +68,7 @@ footer {
     float: right;
     padding-right: 10px;
     font-style: italic;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 footer a {
