@@ -62,11 +62,15 @@ ul {
     list-style-type: disc;
 }
 
-#movies.container {
+#movies {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 30px;
     
+}
+
+table {
+    width: 100%;
 }
 
 th {
