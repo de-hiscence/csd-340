@@ -101,3 +101,8 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+footer p {
+    font-style: italic;
+    float: left;
+}
