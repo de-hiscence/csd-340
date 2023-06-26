@@ -34,7 +34,6 @@ h1 {
     margin-left: 5%;
     margin-right: 5%;
     bottom: 100px;
-    padding: 10px;
 }
 
 .card {
@@ -81,6 +80,7 @@ th {
 td {
     border: 1px solid #333;
     padding: 8px;
+    border-collapse: collapse;
 }
 
 footer {
