@@ -1,0 +1,110 @@
+<!--Loren Alvarez Mejias, Module 11.2-->
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSD 340 Development with HTML and CSS</title>
+        <link href="Alvarez_Mod11_2.css" type="text/css"
+        rel="stylesheet" />
+
+    </head>
+    
+        <div id="container">
+            <h1>Assignment 11.2 - JavaScript - Part 3 </h1>
+
+            <p>This is an interactive To Do List. Type in your first item in the text box, then click Add. Click the Display button to see current items in the list. Click on Delete and 'x' if you'd like to remove items.</p>
+            <div class="addSection">
+                <input id="todoInput" type="text">
+                <button type="button" onclick="todoList()">Add Item</button>
+                
+                <!--Delete Entry button-->
+                <div class="deleteEntry">
+                    <button onclick="deleteIt()">Delete</button>
+                </div>
+
+                <!--Hide/show display button-->
+                <div class="displayTodo">
+                    <button onclick="hideDisplay()">Display</button>
+                </div>
+                <hr>
+                
+                <!-- The list -->
+                <div id="toDo">
+                    <ol id="todoList"></ol>
+                </div>
+    
+                <script>
+                var theList = [];
+                
+                
+                // Funcs to populate list and hide display
+                function todoList() {
+                    
+                    var item = document.getElementById('todoInput').value;
+                    var text = document.createTextNode(item);
+                    var checkbox = document.createElement('input');
+                    checkbox.type = "checkbox";
+                    checkbox.name = "name";
+                    checkbox.value = "value";
+                    var newItem = document.createElement("li");
+    
+                    newItem.appendChild(checkbox);
+                    newItem.appendChild(text);
+                    document.getElementById("todoList").appendChild(newItem);
+                    
+                    theList.push(item); 
+    
+                    console.log(theList);
+                    
+                    
+                    return clear();
+
+                }
+    
+                function clear() {
+                    todoInput.value = "";
+                }
+                
+                function hideDisplay (){
+                    var x = document.getElementById('toDo');
+                    if (x.style.display == 'none') {
+                        x.style.display = 'block';
+                    } else {
+                        x.style.display = 'none';
+                    }
+                }
+
+                // Func to delete items
+                function deleteIt() {
+                    var theList = document.getElementsByTagName("LI");
+                    var i;
+                    for (i = 0; i < theList.length; i++) {
+                        var span = document.createElement("SPAN");
+                        var txt = document.createTextNode("\u00D7");
+                        span.className = "close";
+                        span.appendChild(txt);
+                        theList[i].appendChild(span);
+                    }
+
+                    var close = document.getElementsByClassName("close");
+                    var i;
+                    for (i = 0; i < close.length; i++) {
+                        close[i].onclick = function() {
+                            var div = this.parentElement;
+                            div.style.display = "none";
+                        }
+                    }
+                }
+                
+                </script>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+
+
+<!-- Sources: https://html-shark.com/HTML/ShowHideSections.htm 
+https://www.w3schools.com/howto/howto_js_todolist.asp-->

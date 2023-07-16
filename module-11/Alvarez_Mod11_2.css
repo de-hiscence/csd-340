@@ -1,0 +1,12 @@
+
+
+.addSection, .displayTodo, .deleteEntry {
+    display: inline-block;
+
+}
+
+button:hover {
+    color: rgb(187, 207, 195);
+    background-color: rgba(30, 82, 82, 0.652);
+}
+
