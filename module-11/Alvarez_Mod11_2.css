@@ -6,7 +6,34 @@
 }
 
 button:hover {
-    color: rgb(187, 207, 195);
+    color: rgb(255, 255, 255);
     background-color: rgba(30, 82, 82, 0.652);
 }
 
+#copyr{
+    color: fff;
+    font-style: italic;
+    font-size: 18px;
+
+}
+footer {
+    background-color: rgba(30, 82, 82, 0.652);
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    color: #f8f5f0;
+    font-weight: 400;
+    float: right;
+    font-style: italic;
+    overflow-x: hidden;
+}
+
+footer a {
+    color: #f8f5f0;
+    text-decoration: none;
+    float: right;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
