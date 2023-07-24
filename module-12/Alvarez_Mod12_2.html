@@ -1,0 +1,101 @@
+<!--Loren Alvarez Mejias, Assignment 12.2, 07.23.2023-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <link href="Alvarez_Mod12_2.css" type="text/css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div id="container" class="float-container">
+            <h1>Assignment 12.2: JavaScript - Part 4 </h1>
+            <div id="list1" class="float-child"> 
+                <h3>Top 10 Favorite Books</h3>
+                <!-- Button container -->
+                <div class="button-container">
+                    <button onclick="sortBooksAscending()">Top to Bottom</button>
+                    <button onclick="sortBooksDescending()">Bottom to Top</button>
+                </div>
+                <hr>
+
+                  <!-- Book list container -->
+                <div class="book-container">
+                    <ol id="book-list"></ol>
+                </div>
+                
+                <script>
+                    // Book array
+                    let books = [
+                      "Harry Potter and the Prisoner of Azkaban",
+                      "The Lord of the Rings by JRR Tolkien",
+                      "Bram Stoker Dracula",
+                      "The Perfect Husband by Lisa Gardner",
+                      "The Summoning by Kelley Armstrong",
+                      "Night World by LJ Smith",
+                      "Perfume: The Story of a Murderer by Patrick Suskind",
+                      "Aqui Empieza Todo by Jennifer Niven",
+                      "Catch Me by Lisa Gardner",
+                      "The Silent Patient by Alex Michaelides"
+                    ];
+                
+                    // Display book list function
+                    function displayBooks(order) {
+                      // Get the book list container
+                      const bookList = document.getElementById("book-list");
+                      // Clear the old book list
+                      bookList.innerHTML = "";
+                
+                      // Loop through the books array and create a new li element for each book
+                      for (let i = 0; i < books.length; i++) {
+                        const book = books[order[i]];
+                
+                        // Create new li element
+                        const li = document.createElement("li");
+                
+                        // Set the text of the li element to the book title with the number
+                        li.textContent = `${i+1}. ${book}`;
+                
+                        // Add the newly created li element to the ol list
+                        bookList.appendChild(li);
+                      }
+                    }
+                
+                    // Sort books in ascending order function
+                    function sortBooksAscending() {
+                      const order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                      displayBooks(order);
+                    }
+                
+                    // Sort books in descending order function
+                    function sortBooksDescending() {
+                      const order = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+                      displayBooks(order);
+                    }
+                
+                    // Call the displayBooks function to display the initial book list in ascending order
+                    sortBooksAscending();
+                
+                    // Add event listeners to the sort ascending and sort descending buttons
+                    document.getElementById("sort-ascending").addEventListener("click", sortBooksAscending);
+                    document.getElementById("sort-descending").addEventListener("click", sortBooksDescending);
+                  </script>
+                   
+            </div>
+            <div id="list2" class="float-child"> 
+               <h3>Five Things I've Learned Since the Course Started</h3>
+                    <ul id="learn">
+                        <li>I've learned what HTML and CSS are and how to start using them.</li><br>
+                        <li>I've learned facts on how the human brain works from a design perspective.</li><br>
+                        <li>I've learned how complex the work of a designer can be when you have to take into account so many details to bring something together.</li><br>
+                        <li>I'm learning how to implement this information to create user-friendly design.</li><br>
+                        <li>I've learned how design can be fun, and how to integrate working with different platforms when creating a web page.</li><br>
+                    </ul>
+            </div>
+            <div id="goBack"><a href="https://de-hiscence.github.io/csd-340/">Back to Index</a>  </div>
+        </div>
+</html>
+
+
+
+
+<!-- Sources: https://stackoverflow.com/questions/30610523/reverse-array-in-javascript-without-mutating-original-array-->
