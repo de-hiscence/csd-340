@@ -3,6 +3,6 @@
 ## Contributor
 * Loren Alvarez Mejias
 
-###Description
+### Description
 
 School assignments and projects.
