@@ -1,6 +1,8 @@
-# CSD 340 Web Development with HTML and CSS
+# Web Development
 
-## Contributors
-
-* Professor Shelanskey 
+## Contributor
 * Loren Alvarez Mejias
+
+###Description
+
+School assignments and projects.
